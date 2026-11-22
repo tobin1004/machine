@@ -83,23 +83,23 @@
         const name = bestPrediction.className;
         const probability = bestPrediction.probability;
 
-        if (probability >= 0.8) {
+        // if (probability >= 0.8) {
 
-            if (name == "apple") {
-                labelContainer.childNodes[0].innerHTML =
-                    "사과입니다. 사과는 장미과에 속하는 과일로 아삭하고 달콤한 맛이 특징입니다.";
+        //     if (name == "apple") {
+        //         labelContainer.childNodes[0].innerHTML =
+        //             "사과입니다. 사과는 장미과에 속하는 과일로 아삭하고 달콤한 맛이 특징입니다.";
 
-            } else if (name == "persimmon") {
-                labelContainer.childNodes[0].innerHTML =
-                    "감입니다. 감은 감나무에서 열리는 과일로 단감, 홍시, 곶감 등으로 먹습니다.";
+        //     } else if (name == "persimmon") {
+        //         labelContainer.childNodes[0].innerHTML =
+        //             "감입니다. 감은 감나무에서 열리는 과일로 단감, 홍시, 곶감 등으로 먹습니다.";
 
-            } else {
-                labelContainer.childNodes[0].innerHTML = "인식할 수 없는 과일입니다.";
-            }
+        //     } else {
+        //         labelContainer.childNodes[0].innerHTML = "인식할 수 없는 과일입니다.";
+        //     }
 
-        } else {
-            labelContainer.childNodes[0].innerHTML = "인식 정확도가 낮습니다. 다시 촬영해 주세요.";
-        }
+        // } else {
+        //     labelContainer.childNodes[0].innerHTML = "인식 정확도가 낮습니다. 다시 촬영해 주세요.";
+        // }
     }
 </script>
 
