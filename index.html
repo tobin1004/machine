@@ -58,6 +58,16 @@
     async function predict() {
         // predict can take in an image, video or canvas html element
         const prediction = await model.predict(webcam.canvas);
+        // 모든 클래스의 인식 결과 출력
+        let result = "";
+
+        for (let i = 0; i < maxPredictions; i++) {
+            result += prediction[i].className + " : "
+            + (prediction[i].probability * 100).toFixed(2)
+            + "%<br>";
+        }
+
+    labelContainer.childNodes[0].innerHTML = result;
         // for (let i = 0; i < maxPredictions; i++) {
         //     const classPrediction =
         //         prediction[i].className + ": " + prediction[i].probability.toFixed(2);
